@@ -1,0 +1,23 @@
+{
+  "name": "Attention-Releasinator-2000",
+  "version": "1.0",
+  "manifest_version": 2,
+  "default_locale": "en",
+  "description": "Makes websites that you want to spend less time on greyscale.",
+  "icons": {
+    "16": "/icons/size 16 square.png",
+    "48": "/icons/size 48 square.png",
+    "128": "/icons/size 128 square.png"
+  },
+  "page_action": {
+    "default_icon": {
+      "16": "/icons/size 16 circle.png",
+      "48": "/icons/size 48 circle.png",
+      "128": "/icons/size 128 circle.png"
+    }
+  },
+  "content_scripts": [{
+    "matches": ["https://www.google.com/*", "https://www.facebook.com/*", "https://old.reddit.com/*", "https://imgur.com/*"],
+    "css": ["css/styles.css"]
+  }]
+}
